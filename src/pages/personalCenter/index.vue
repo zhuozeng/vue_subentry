@@ -1,5 +1,5 @@
 <template>
     <div>
-        我是首页!!!
+        个人中心
     </div>
 </template>
