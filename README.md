@@ -101,6 +101,7 @@ Vue.http.options.root = 'http://www.lovegf.cn:8899/';
 ​		token
 
 ​	-**框架**我们尽量只使用 一个!!!
+  框架为  vant-ui  已经引入 按需引入!
 
 ​	-**模板字符串**统一使用
 
