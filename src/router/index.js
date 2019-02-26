@@ -6,6 +6,10 @@ import news from '../pages/news'
 import shopping from '../pages/shopping'
 import personalCenter from '../pages/personalCenter'
 import category from '../pages/category'
+import goodsList from '../components/goodsList.vue'
+import goodsInfo from '../pages/goodsInfo/'
+
+
 
 
 Vue.use(Router)
@@ -22,7 +26,11 @@ export default new Router({
     {path:'/news' , component:news},
     {path:'/shopping' , component:shopping},
     {path:'/personalCenter' , component:personalCenter},
-    {path:'/category' , component:category}
+    {path:'/category' , component:category},
+    {path:'/home/goodsList/' , component:goodsList},
+    {path:'/goodsInfo/:id' , component:goodsInfo}
+
+
 
 
 
