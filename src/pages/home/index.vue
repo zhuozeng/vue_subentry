@@ -27,10 +27,11 @@
         :key="item.id"
         span="8"
       >
-        <div>
+
+        <router-link :to="'/home/goodsList/?id='+ item.id + '&title=' + item.name" tag="div">
           <img :src="item.img" alt srcset>
           <p>{{item.name}}</p>
-        </div>
+        </router-link>
       </van-col>
     </van-row>
   </div>
