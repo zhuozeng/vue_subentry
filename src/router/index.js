@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+<<<<<<< HEAD
+=======
 // import HelloWorld from '@/components/HelloWorld'
 import home from '../pages/home'
 import news from '../pages/news'
@@ -13,11 +15,15 @@ import mySelf from '../pages/mySelf/'
 
 
 
+>>>>>>> 02dd27d6df99852f030c5850c7cf091baa94f68a
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+<<<<<<< HEAD
+    
+=======
     // {
     //   path: '/',
     //   name: 'HelloWorld',
@@ -37,5 +43,6 @@ export default new Router({
 
 
 
+>>>>>>> 02dd27d6df99852f030c5850c7cf091baa94f68a
   ]
 })
