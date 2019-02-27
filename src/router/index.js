@@ -8,6 +8,8 @@ import personalCenter from '../pages/personalCenter'
 import category from '../pages/category'
 import goodsList from '../components/goodsList.vue'
 import goodsInfo from '../pages/goodsInfo/'
+import mySelf from '../pages/mySelf/'
+
 
 
 
@@ -28,7 +30,8 @@ export default new Router({
     {path:'/personalCenter' , component:personalCenter},
     {path:'/category' , component:category},
     {path:'/home/goodsList/' , component:goodsList},
-    {path:'/goodsInfo/:id' , component:goodsInfo}
+    {path:'/goodsInfo/:id' , component:goodsInfo},
+    {path:'/mySelf' , component:mySelf}
 
 
 

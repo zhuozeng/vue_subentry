@@ -31,7 +31,7 @@ axios.interceptors.response.use(function (response) {
 // Vue.use(Mint);
 
 // 引入vant-ui
-import { Button, Cell ,Swipe, SwipeItem,Row, Col ,Search , Tabbar, TabbarItem ,NavBar} from 'vant';
+import { Button,Toast, Cell ,Swipe, SwipeItem,Row, Col ,Search , Tabbar, TabbarItem ,NavBar ,GoodsAction, GoodsActionBigBtn, GoodsActionMiniBtn } from 'vant';
 
 Vue.use(Button , Cell);
 Vue.use(Swipe).use(SwipeItem);
@@ -40,6 +40,15 @@ Vue.use(Row).use(Col);
 Vue.use(Search);
 Vue.use(Tabbar).use(TabbarItem);
 Vue.use(NavBar);
+Vue.use(Toast);
+Vue.use(GoodsAction)
+  .use(GoodsActionBigBtn)
+.use(GoodsActionMiniBtn);
+
+// 全局注册组件
+import comment from './components/buttonMain.vue'
+Vue.component('comment', comment)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

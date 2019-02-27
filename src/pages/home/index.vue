@@ -6,13 +6,7 @@
       <span>搜索</span>
     </div>
 
-    <van-tabbar v-model="active">
-      <van-tabbar-item icon="home-o">首页</van-tabbar-item>
-      <van-tabbar-item icon="search" dot>分类</van-tabbar-item>
-      <van-tabbar-item icon="friends-o" info="5">新闻</van-tabbar-item>
-      <van-tabbar-item icon="setting-o van-icon-shopping-cart" info="20">购物车</van-tabbar-item>
-      <van-tabbar-item icon="setting-o" info="20">我的</van-tabbar-item>
-    </van-tabbar>
+    
 
     <van-swipe :autoplay="3000" indicator-color="white">
       <van-swipe-item class="img_list" v-for="(item , index) in banner_list" :key="item.id">
@@ -34,14 +28,19 @@
         </router-link>
       </van-col>
     </van-row>
+
+     <comment></comment>
+    
   </div>
 </template>
 <script>
 import axios from "axios";
+
+
 export default {
   data() {
     return {
-      active: 0,
+   
       value: "",
       banner_list: [],
       GoodsSubCategories_list: []
@@ -80,7 +79,6 @@ export default {
     width: 100%;
     box-sizing: border-box;
     padding: 0 30px;
-
     > i,
     > span {
       position: absolute;

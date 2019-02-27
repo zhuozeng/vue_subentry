@@ -25,15 +25,21 @@
       </span>
       <span>
         <b>商品详情:</b>
-      </span>
-
+      </span>111
+      <van-goods-action>
+        6666
+        <van-goods-action-mini-btn icon="chat-o" text="客服" @click="onClickMiniBtn"/>
+        <van-goods-action-mini-btn icon="cart-o" text="购物车" @click="onClickMiniBtn"/>
+        <van-goods-action-big-btn text="加入购物车" @click="onClickBigBtn"/>
+        <van-goods-action-big-btn primary text="立即购买" @click="onClickBigBtn"/>
+      </van-goods-action>
       <div class="goodsInfo_content" v-html="goodsInfo_details.content"></div>
     </div>
   </div>
 </template>
 
 <script>
-import { ImagePreview } from "vant";
+import { ImagePreview ,Toast } from "vant";
 
 // setTimeout(() => {
 //   instance.close();
@@ -41,7 +47,7 @@ import { ImagePreview } from "vant";
 export default {
   data() {
     return {
-        datu:{},
+      datu: {},
       titel: "",
       id: this.$route.params.id,
       goodsInfo_details: []
@@ -52,6 +58,13 @@ export default {
   },
   mounted() {},
   methods: {
+    onClickMiniBtn() {
+      Toast("点击图标");
+    },
+    onClickBigBtn() {
+      Toast("点击按钮");
+    },
+
     button_() {
       let list = [];
       for (var i = 0; i < this.goodsInfo_details.big_img.length - 1; i++) {
@@ -63,8 +76,7 @@ export default {
     gitProduct() {
       this.$http.get("v1/goods/getGoodsInfo/" + this.id).then(result => {
         this.goodsInfo_details = result.data;
-        this.datu.big_tu=this.goodsInfo_details.big_img[0]
-        
+        this.datu.big_tu = this.goodsInfo_details.big_img[0];
       });
     }
 
@@ -80,7 +92,7 @@ export default {
 
 <style lang="less">
 .Product_box {
-    
+  padding-bottom: 50px;
   .Product {
     > span {
       display: block;

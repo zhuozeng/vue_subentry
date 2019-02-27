@@ -1,6 +1,6 @@
 <template>
     <div>
-        分类页面!!!
+        个人中心!!
          <comment></comment>
     </div>
 </template>
