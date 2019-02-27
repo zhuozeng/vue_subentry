@@ -1,5 +1,5 @@
 <template>
     <div>
-        我是新闻页面
+        个人中心
     </div>
 </template>
