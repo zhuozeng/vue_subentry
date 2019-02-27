@@ -29,7 +29,7 @@
       </van-col>
     </van-row>
 
-     <comment></comment>
+     <!-- <comment></comment> -->
     
   </div>
 </template>

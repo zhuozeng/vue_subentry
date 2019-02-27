@@ -1,9 +1,14 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
-=======
-    <!-- <van-button type="default">默认按钮</van-button> -->
->>>>>>> 02dd27d6df99852f030c5850c7cf091baa94f68a
+   
+    <van-tabbar v-model="active">
+      <van-tabbar-item to="/home" icon="home-o">首页</van-tabbar-item>
+      <van-tabbar-item to="/category" icon="search" dot>分类</van-tabbar-item>
+      <van-tabbar-item to="/news" icon="friends-o" info="5">新闻</van-tabbar-item>
+      <van-tabbar-item to="/shopping" icon="setting-o van-icon-shopping-cart" info="20">购物车</van-tabbar-item>
+      <van-tabbar-item to="/mySelf" icon="setting-o" info="20">我的</van-tabbar-item>
+    </van-tabbar> 
+ 
     <router-view/>
     
   </div>
@@ -12,20 +17,16 @@
 <script>
 export default {
   name: "App",
+  data(){
+    return {
+      active: 0 
+    }
+  }
  
 };
 </script>
 
 <style>
 #app {
-<<<<<<< HEAD
-  /* font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px; */
-=======
->>>>>>> 02dd27d6df99852f030c5850c7cf091baa94f68a
 }
 </style>

@@ -25,14 +25,14 @@
       </span>
       <span>
         <b>商品详情:</b>
-      </span>111
+      </span>
       <van-goods-action>
-        6666
         <van-goods-action-mini-btn icon="chat-o" text="客服" @click="onClickMiniBtn"/>
         <van-goods-action-mini-btn icon="cart-o" text="购物车" @click="onClickMiniBtn"/>
         <van-goods-action-big-btn text="加入购物车" @click="onClickBigBtn"/>
         <van-goods-action-big-btn primary text="立即购买" @click="onClickBigBtn"/>
       </van-goods-action>
+
       <div class="goodsInfo_content" v-html="goodsInfo_details.content"></div>
     </div>
   </div>
@@ -92,6 +92,10 @@ export default {
 
 <style lang="less">
 .Product_box {
+  .van-goods-action{
+
+   margin-bottom: 50px;
+  }
   padding-bottom: 50px;
   .Product {
     > span {

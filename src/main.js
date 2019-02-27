@@ -46,8 +46,8 @@ Vue.use(GoodsAction)
 .use(GoodsActionMiniBtn);
 
 // 全局注册组件
-import comment from './components/buttonMain.vue'
-Vue.component('comment', comment)
+// import comment from './components/buttonMain.vue'
+// Vue.component('comment', comment)
 
 Vue.config.productionTip = false
 
@@ -55,5 +55,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  // comment,
   render: h => h(App)
 })
